@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilterCollectionViewCell" id="rr6-1h-UDh" customClass="FilterCollectionViewCell" customModule="MovieWorld" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="141" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3fi-do-EKO">
+                <rect key="frame" x="0.0" y="0.0" width="141" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RI-EW-qRv">
+                        <rect key="frame" x="49.5" y="14.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0RI-EW-qRv" firstAttribute="centerY" secondItem="3fi-do-EKO" secondAttribute="centerY" id="M34-Tz-TI6"/>
+                    <constraint firstItem="0RI-EW-qRv" firstAttribute="centerX" secondItem="3fi-do-EKO" secondAttribute="centerX" id="lXC-8s-fgF"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="141" height="50"/>
+            <connections>
+                <outlet property="filterLabel" destination="0RI-EW-qRv" id="1cP-Lq-xcb"/>
+            </connections>
+            <point key="canvasLocation" x="264.49275362318843" y="72.991071428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>

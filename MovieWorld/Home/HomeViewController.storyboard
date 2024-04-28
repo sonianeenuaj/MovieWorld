@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vzF-MS-9D9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="Movie_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movieBanner" translatesAutoresizingMaskIntoConstraints="NO" id="6AZ-GZ-Z4S">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To Movie World" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWH-jo-WAc">
+                                <rect key="frame" x="16" y="409" width="382" height="78.5"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNd-za-SFs">
+                                <rect key="frame" x="298" y="786" width="100" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.33478806775454106" blue="0.30943563301221555" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="J5Q-d8-wab"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Explore"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="exploreAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gGt-co-hfl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.97900135690000001" green="0.88344740180000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hWH-jo-WAc" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="4Rk-zz-XgD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6AZ-GZ-Z4S" secondAttribute="trailing" id="4qm-O8-Ckz"/>
+                            <constraint firstItem="hWH-jo-WAc" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="8IU-Fm-iTB"/>
+                            <constraint firstItem="hWH-jo-WAc" firstAttribute="top" secondItem="6AZ-GZ-Z4S" secondAttribute="bottom" id="Cjr-gM-Zm6"/>
+                            <constraint firstItem="hWH-jo-WAc" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="16" id="PzC-6z-d7p"/>
+                            <constraint firstAttribute="trailing" secondItem="hWH-jo-WAc" secondAttribute="trailing" constant="16" id="Xho-oN-2SJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DNd-za-SFs" secondAttribute="trailing" constant="16" id="ZkY-dy-Lqe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="DNd-za-SFs" secondAttribute="bottom" constant="45" id="cK3-b1-730"/>
+                            <constraint firstItem="6AZ-GZ-Z4S" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="jIU-vE-hGg"/>
+                            <constraint firstItem="6AZ-GZ-Z4S" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="tJE-vC-fXd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ted-aY-BAM"/>
+                    <connections>
+                        <outlet property="exploreButton" destination="DNd-za-SFs" id="NaZ-dN-8LZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923.1884057971015" y="53.571428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pzR-Fg-62T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vzF-MS-9D9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vuz-N1-GqY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="ifs-CQ-9sp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69r-7X-TfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="53.571428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="movieBanner" width="3600" height="2400"/>
+    </resources>
+</document>

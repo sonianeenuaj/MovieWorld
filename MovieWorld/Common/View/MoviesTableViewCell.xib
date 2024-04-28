@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="129" id="dKu-Fd-9tA" customClass="MoviesTableViewCell" customModule="MovieWorld" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dKu-Fd-9tA" id="dhz-nw-vVS">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cid-lz-fii">
+                        <rect key="frame" x="0.0" y="8" width="414" height="121.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fRk-Af-Vv9">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Dio-YR-v6V"/>
+                                    <constraint firstAttribute="width" constant="150" id="fC0-he-qg3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk1-hQ-L0L">
+                                <rect key="frame" x="158" y="16" width="240" height="17"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh3-Ce-Jsu">
+                                <rect key="frame" x="190" y="89.5" width="34.5" height="16"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starIcon" translatesAutoresizingMaskIntoConstraints="NO" id="9B5-qL-8d7">
+                                <rect key="frame" x="158" y="85.5" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="gZi-9e-8Xh"/>
+                                    <constraint firstAttribute="width" constant="24" id="lbz-sp-kPg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uk1-hQ-L0L" firstAttribute="top" secondItem="cid-lz-fii" secondAttribute="top" constant="16" id="28G-Mk-hVh"/>
+                            <constraint firstItem="9B5-qL-8d7" firstAttribute="leading" secondItem="fRk-Af-Vv9" secondAttribute="trailing" constant="8" id="BHd-lf-sZY"/>
+                            <constraint firstItem="9B5-qL-8d7" firstAttribute="centerY" secondItem="Kh3-Ce-Jsu" secondAttribute="centerY" id="EOX-Sl-36J"/>
+                            <constraint firstAttribute="trailing" secondItem="Uk1-hQ-L0L" secondAttribute="trailing" constant="16" id="Xhy-VH-Chq"/>
+                            <constraint firstItem="Kh3-Ce-Jsu" firstAttribute="leading" secondItem="9B5-qL-8d7" secondAttribute="trailing" constant="8" id="aYI-BC-0U1"/>
+                            <constraint firstItem="fRk-Af-Vv9" firstAttribute="top" secondItem="cid-lz-fii" secondAttribute="top" id="ec0-Fh-wkQ"/>
+                            <constraint firstAttribute="bottom" secondItem="fRk-Af-Vv9" secondAttribute="bottom" id="fKe-dv-yNP"/>
+                            <constraint firstAttribute="bottom" secondItem="Kh3-Ce-Jsu" secondAttribute="bottom" constant="16" id="rVQ-Lt-KdL"/>
+                            <constraint firstItem="9B5-qL-8d7" firstAttribute="top" secondItem="Uk1-hQ-L0L" secondAttribute="bottom" priority="250" constant="52.5" id="wSb-tT-IcT"/>
+                            <constraint firstItem="fRk-Af-Vv9" firstAttribute="leading" secondItem="cid-lz-fii" secondAttribute="leading" id="xut-kS-Qf6"/>
+                            <constraint firstItem="Uk1-hQ-L0L" firstAttribute="leading" secondItem="fRk-Af-Vv9" secondAttribute="trailing" constant="8" id="zqU-8b-h8o"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cid-lz-fii" secondAttribute="bottom" id="8Jo-rY-lhv"/>
+                    <constraint firstItem="cid-lz-fii" firstAttribute="top" secondItem="dhz-nw-vVS" secondAttribute="top" constant="8" id="BJk-ZU-U7i"/>
+                    <constraint firstItem="cid-lz-fii" firstAttribute="leading" secondItem="dhz-nw-vVS" secondAttribute="leading" id="OTE-NJ-cvt"/>
+                    <constraint firstAttribute="trailing" secondItem="cid-lz-fii" secondAttribute="trailing" id="Snc-yA-U27"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="iconImageView" destination="fRk-Af-Vv9" id="XSW-J0-N11"/>
+                <outlet property="parentView" destination="cid-lz-fii" id="W1t-bN-oOu"/>
+                <outlet property="ratingLabel" destination="Kh3-Ce-Jsu" id="nlv-Pg-rVb"/>
+                <outlet property="titleLabel" destination="Uk1-hQ-L0L" id="CrK-sF-kio"/>
+            </connections>
+            <point key="canvasLocation" x="189.85507246376812" y="90.066964285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="starIcon" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
